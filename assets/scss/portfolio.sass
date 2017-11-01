@@ -1,0 +1,110 @@
+#portfolio
+    background: linear-gradient(50deg, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url(/img/hero-02.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+
+    h2
+        padding-top: 50px
+
+    .portfolioWrapper
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        padding-top: 50px
+        padding-bottom: 20px
+
+        .portfolioRow
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+
+            .portfolioImg
+                width: 300px
+                height: 169px
+                display: flex
+                background: white
+                cursor: pointer
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                margin-bottom: 10px
+
+
+                img
+                    display: none
+                    width: 50px
+                    cursor: pointer
+
+                p
+                    display: none
+
+                &:hover
+
+                        p
+                            color: white
+                            display: block
+
+                        img
+                            display: block
+                            width: 50px
+
+            .one
+                background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/hero-02.png)
+                background-size: cover
+
+                &:hover
+                    background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/hero-02.png)
+                    background-size: cover
+
+            .two
+                background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/hero-02.png)
+                background-size: cover
+
+                &:hover
+                    background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/hero-02.png)
+                    background-size: cover
+
+            .three
+                background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/hero-02.png)
+                background-size: cover
+
+                &:hover
+                    background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/hero-02.png)
+                    background-size: cover
+
+            .four
+                background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/hero-02.png)
+                background-size: cover
+
+                &:hover
+                    background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/hero-02.png)
+                    background-size: cover
+
+            .five
+                background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/hero-02.png)
+                background-size: cover
+
+                &:hover
+                    background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/hero-02.png)
+                    background-size: cover
+
+            .six
+                background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/hero-02.png)
+                background-size: cover
+
+                &:hover
+                    background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/hero-02.png)
+                    background-size: cover
+
+.divider.white
+    background-color: white
+
+@media (min-width: 768px)
+    #portfolio .portfolioWrapper .portfolioRow
+        flex-direction: row
+
+        .portfolioImg
+            margin-bottom: 0

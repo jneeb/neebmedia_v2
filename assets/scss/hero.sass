@@ -1,0 +1,76 @@
+#hero
+    background-image: url(/img/hero-01.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    height: 80vh
+
+    .heroWrapper
+        height: 65vh
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        padding: 0 20px
+
+        img
+
+        .logo
+            display: block
+            height: 100px
+            width: 100px
+            border-radius: 50%
+            background-color: white
+
+        h1
+            text-align: center
+            color: white
+            margin: 10px
+
+        p
+            text-align: center
+            color: white
+            max-width: 500px
+
+        button
+            color: white
+            background: none
+            border: 2px solid white
+            border-radius: 2px
+            box-sizing: border-box
+            padding: 8px 35px
+            cursor: pointer
+
+    .scrollDown
+        display: none
+        color: white
+        position: absolute
+        left: 50%
+        bottom: 25%
+        transform: translate(-50%)
+
+.arrowWrapper
+    width: 100%
+    display: flex
+    position: relative
+
+    .arrowUp
+        display: block
+        border-style: solid
+        border-color: transparent transparent transparent white
+        border-width: 15vh 0 0 50vw
+
+    .arrowUpTwo
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 0 0 15vh 50vw
+        border-color: transparent transparent #ffffff transparent
+
+.arrowDown
+    display: block
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 15vh 50vw 0 50vw
+    border-color: #ffffff transparent transparent transparent

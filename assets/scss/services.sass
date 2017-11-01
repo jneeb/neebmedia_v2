@@ -1,0 +1,54 @@
+#services
+
+    h2
+        padding-top: 50px
+
+    .serviceWrapper
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding-bottom: 20px
+
+        .serviceItem
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            max-width: 300px
+            margin: 50px 20px 0 20px
+
+            span
+                color: $grey
+                font-size: 50px
+
+
+            h3
+                color: $grey
+
+            p
+                text-align: center
+                margin: 0
+                color: $grey
+
+.divider
+    display: block
+    width: 35px
+    height: 5px
+    position: absolute
+    left: 50%
+    transform: translate(-50%)
+    background-color: $blue
+
+.title
+    text-align: center
+    margin: 0
+    color: $blue
+    margin: 20px 0 8px 0
+
+.title.white
+    color: white
+
+@media (min-width: 768px)
+    #services .serviceWrapper
+        flex-direction: row
