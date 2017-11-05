@@ -8,12 +8,65 @@ body {
   padding: 0;
   height: 100%; }
 
+h1, h2, h3, h4 {
+  font-family: 'Roboto', sans-serif; }
+
+a, p {
+  font-family: 'Open Sans', sans-serif; }
+
+a {
+  text-decoration: none; }
+
 .desktopNav {
   display: none; }
 
 .mobileNav {
   position: absolute;
   width: 100%; }
+  .mobileNav #mobileBurger {
+    position: absolute;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 50px;
+    width: 50px;
+    padding: 15px 15px;
+    cursor: pointer; }
+    .mobileNav #mobileBurger span,
+    .mobileNav #mobileBurger span:before,
+    .mobileNav #mobileBurger span:after {
+      content: "";
+      display: block;
+      background-color: white;
+      height: 3px;
+      width: 30px;
+      position: relative;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+    .mobileNav #mobileBurger span:before {
+      top: 10px; }
+    .mobileNav #mobileBurger span:after {
+      top: -13px; }
+    .mobileNav #mobileBurger.isOpen span {
+      background: transparent; }
+    .mobileNav #mobileBurger.isOpen span:before,
+    .mobileNav #mobileBurger.isOpen span:after {
+      -webkit-transform-origin: center;
+              transform-origin: center;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      top: 0; }
+    .mobileNav #mobileBurger.isOpen span:after {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      top: -3px; }
   .mobileNav .mobileLogo img {
     position: absolute;
     width: 100px;
@@ -38,7 +91,50 @@ body {
 
 @media (min-width: 768px) {
   .mobileNav {
-    display: none; } }
+    display: none; }
+  .desktopNav {
+    display: block; }
+    .desktopNav .logo {
+      position: absolute;
+      top: 20px;
+      left: 15%;
+      height: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .desktopNav .logo h1 {
+        margin: 0; }
+        .desktopNav .logo h1 img {
+          width: 200px; }
+    .desktopNav ul {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      top: 20px;
+      right: 15%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 50px; }
+      .desktopNav ul li {
+        display: inline-block;
+        padding: 0 10px; }
+        .desktopNav ul li a {
+          text-decoration: none;
+          color: white;
+          font-weight: 400;
+          padding-bottom: 5px; }
+          .desktopNav ul li a:hover {
+            border-bottom: 2px solid white; } }
 
 #hero {
   background-image: url(/img/hero-01.png);
@@ -62,16 +158,12 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0 20px; }
-    #hero .heroWrapper .logo {
-      display: block;
-      height: 100px;
-      width: 100px;
-      border-radius: 50%;
-      background-color: white; }
-    #hero .heroWrapper h1 {
-      text-align: center;
-      color: white;
-      margin: 10px; }
+    #hero .heroWrapper .mobileHero .logo h1 {
+      margin: 0; }
+      #hero .heroWrapper .mobileHero .logo h1 img {
+        width: 200px; }
+    #hero .heroWrapper .desktopHero {
+      display: none; }
     #hero .heroWrapper p {
       text-align: center;
       color: white;
@@ -84,7 +176,11 @@ body {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       padding: 8px 35px;
-      cursor: pointer; }
+      cursor: pointer;
+      font-family: 'Roboto', sans-serif; }
+      #hero .heroWrapper button:hover {
+        color: black;
+        background-color: white; }
   #hero .scrollDown {
     display: none;
     color: white;
@@ -120,6 +216,21 @@ body {
   border-width: 15vh 50vw 0 50vw;
   border-color: #ffffff transparent transparent transparent; }
 
+@media (min-width: 768px) {
+  #hero .heroWrapper .desktopHero {
+    display: block;
+    font-weight: 600;
+    color: white; }
+    #hero .heroWrapper .desktopHero h1 {
+      color: white;
+      font-size: 40px;
+      font-weight: 600;
+      margin: 0; }
+    #hero .heroWrapper .desktopHero span {
+      font-weight: 300; }
+  #hero .heroWrapper .mobileHero {
+    display: none; } }
+
 #services h2 {
   padding-top: 50px; }
 
@@ -142,9 +253,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -178,7 +286,8 @@ body {
   text-align: center;
   margin: 0;
   color: #2980b9;
-  margin: 20px 0 8px 0; }
+  margin: 20px 0 8px 0;
+  padding-top: 50px; }
 
 .title.white {
   color: white; }
@@ -188,7 +297,9 @@ body {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; } }
+            flex-direction: row; }
+    #services .serviceWrapper .serviceItem {
+      height: 180px; } }
 
 #portfolio {
   background: linear-gradient(50deg, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)), url(/img/hero-02.png);
@@ -392,7 +503,7 @@ body {
       #contact .socialWrapper .socialRow .contactItem {
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
-        margin: 0 20px;
+        margin: 10px 10px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -408,13 +519,13 @@ body {
                 flex-direction: column; }
         #contact .socialWrapper .socialRow .contactItem span {
           color: white;
-          font-size: 40px; }
+          font-size: 30px; }
         #contact .socialWrapper .socialRow .contactItem h4 {
-          color: white; }
+          color: white;
+          margin: 10px 0; }
         #contact .socialWrapper .socialRow .contactItem p {
           margin: 0;
           color: white;
-          max-width: 150px;
           text-align: center; }
 
 footer {
@@ -423,11 +534,35 @@ footer {
     text-align: center;
     color: white; }
     footer p a {
-      color: white; }
+      color: white;
+      text-decoration: underline; }
 
 @media (min-width: 768px) {
   #contact .socialWrapper .socialRow {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; } }
+            flex-direction: row; }
+    #contact .socialWrapper .socialRow .contactItem {
+      margin: 10px 40px; } }
+
+#portfolioHero {
+  background-image: url(/img/hero-01.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 49vh; }
+  #portfolioHero .portfolioPageWrapper {
+    height: 34vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    #portfolioHero .portfolioPageWrapper h1 {
+      color: white;
+      margin: 0; }

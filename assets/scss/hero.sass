@@ -13,19 +13,18 @@
         flex-direction: column
         padding: 0 20px
 
-        img
+        .mobileHero
 
-        .logo
-            display: block
-            height: 100px
-            width: 100px
-            border-radius: 50%
-            background-color: white
+            .logo
 
-        h1
-            text-align: center
-            color: white
-            margin: 10px
+                h1
+                    margin: 0
+
+                    img
+                        width: 200px
+
+        .desktopHero
+            display: none
 
         p
             text-align: center
@@ -40,6 +39,11 @@
             box-sizing: border-box
             padding: 8px 35px
             cursor: pointer
+            font-family: 'Roboto', sans-serif
+
+            &:hover
+                color: black
+                background-color: white
 
     .scrollDown
         display: none
@@ -74,3 +78,21 @@
     border-style: solid
     border-width: 15vh 50vw 0 50vw
     border-color: #ffffff transparent transparent transparent
+
+@media (min-width: 768px)
+    #hero .heroWrapper .desktopHero
+        display: block
+        font-weight: 600
+        color: white
+
+        h1
+            color: white
+            font-size: 40px
+            font-weight: 600
+            margin: 0
+
+        span
+            font-weight: 300
+
+    #hero .heroWrapper .mobileHero
+        display: none

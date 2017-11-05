@@ -29,6 +29,7 @@ gulp.task('default', () =>
 	gulp.watch('./assets/scss/*.sass', ['styles']);
 	gulp.watch('./assets/scss/*.scss', ['styles']);
 	gulp.watch('./**/*.html').on('change', browserSync.reload);
+	gulp.watch('./*.html').on('change', browserSync.reload);
 });
 
 gulp.task('default', ['styles', 'serve']);
