@@ -3,10 +3,10 @@
     background-size: cover
     background-repeat: no-repeat
     background-position: center
-    height: 49vh
+    height: 39vh
 
     .portfolioPageWrapper
-        height: 34vh
+        height: 24vh
         display: flex
         justify-content: center
         align-items: center
@@ -14,3 +14,73 @@
         h1
             color: white
             margin: 0
+
+#content
+
+    .contentWrapper
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        padding: 0 20px 20px 20px
+
+        p
+            color: $grey
+            text-align: center
+            max-width: 500px
+            padding-top: 20px
+
+        img
+            max-width: 90%
+            padding-top: 30px
+
+        .imageWrapper
+            padding: 0 20px 50px 20px
+            width: 100%
+            display: flex
+            justify-content: center
+
+            .desktop
+                width: 80%
+                padding-right: 10px
+
+            .mobile
+                display: none
+                height: 400px
+                padding-left: 10px
+
+        button
+            color: $grey
+            background: none
+            border: 2px solid $grey
+            border-radius: 2px
+            box-sizing: border-box
+            padding: 8px 35px
+            cursor: pointer
+            font-family: 'Roboto', sans-serif
+            font-weight: 600
+
+            &:hover
+                color: white
+                background-color: $blue
+                border: 2px solid $blue
+
+.contentWrapperSEO
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding: 20px 20px 20px 20px
+
+    p
+        color: $grey
+        text-align: center
+        max-width: 800px
+
+@media (min-width: 768px)
+    #content .contentWrapper .imageWrapper .desktop
+        height: 400px
+        width: auto
+
+    #content .contentWrapper .imageWrapper .mobile
+        display: block

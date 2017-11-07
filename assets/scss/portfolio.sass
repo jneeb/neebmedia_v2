@@ -32,18 +32,17 @@
                 flex-direction: column
                 margin-bottom: 10px
 
-
                 img
                     display: none
                     width: 50px
                     cursor: pointer
 
-                p
+                h3
                     display: none
 
                 &:hover
 
-                        p
+                        h3
                             color: white
                             display: block
 
@@ -52,11 +51,11 @@
                             width: 50px
 
             .one
-                background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/hero-02.png)
+                background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/veronaDesktopEdit.png)
                 background-size: cover
 
                 &:hover
-                    background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/hero-02.png)
+                    background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/veronaDesktopEdit.png)
                     background-size: cover
 
             .two
@@ -101,6 +100,10 @@
 
 .divider.white
     background-color: white
+
+#portfolio.noBackground
+    background: none
+    padding-bottom: 20px
 
 @media (min-width: 768px)
     #portfolio .portfolioWrapper .portfolioRow

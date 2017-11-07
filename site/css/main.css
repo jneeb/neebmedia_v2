@@ -177,9 +177,10 @@ a {
               box-sizing: border-box;
       padding: 8px 35px;
       cursor: pointer;
-      font-family: 'Roboto', sans-serif; }
+      font-family: 'Roboto', sans-serif;
+      font-weight: 600; }
       #hero .heroWrapper button:hover {
-        color: black;
+        color: #616161;
         background-color: white; }
   #hero .scrollDown {
     display: none;
@@ -361,19 +362,19 @@ a {
           display: none;
           width: 50px;
           cursor: pointer; }
-        #portfolio .portfolioWrapper .portfolioRow .portfolioImg p {
+        #portfolio .portfolioWrapper .portfolioRow .portfolioImg h3 {
           display: none; }
-        #portfolio .portfolioWrapper .portfolioRow .portfolioImg:hover p {
+        #portfolio .portfolioWrapper .portfolioRow .portfolioImg:hover h3 {
           color: white;
           display: block; }
         #portfolio .portfolioWrapper .portfolioRow .portfolioImg:hover img {
           display: block;
           width: 50px; }
       #portfolio .portfolioWrapper .portfolioRow .one {
-        background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/hero-02.png);
+        background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/veronaDesktopEdit.png);
         background-size: cover; }
         #portfolio .portfolioWrapper .portfolioRow .one:hover {
-          background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/hero-02.png);
+          background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/veronaDesktopEdit.png);
           background-size: cover; }
       #portfolio .portfolioWrapper .portfolioRow .two {
         background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/hero-02.png);
@@ -408,6 +409,10 @@ a {
 
 .divider.white {
   background-color: white; }
+
+#portfolio.noBackground {
+  background: none;
+  padding-bottom: 20px; }
 
 @media (min-width: 768px) {
   #portfolio .portfolioWrapper .portfolioRow {
@@ -551,9 +556,9 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 49vh; }
+  height: 39vh; }
   #portfolioHero .portfolioPageWrapper {
-    height: 34vh;
+    height: 24vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -566,3 +571,85 @@ footer {
     #portfolioHero .portfolioPageWrapper h1 {
       color: white;
       margin: 0; }
+
+#content .contentWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px 20px 20px; }
+  #content .contentWrapper p {
+    color: #616161;
+    text-align: center;
+    max-width: 500px;
+    padding-top: 20px; }
+  #content .contentWrapper img {
+    max-width: 90%;
+    padding-top: 30px; }
+  #content .contentWrapper .imageWrapper {
+    padding: 0 20px 50px 20px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #content .contentWrapper .imageWrapper .desktop {
+      width: 80%;
+      padding-right: 10px; }
+    #content .contentWrapper .imageWrapper .mobile {
+      display: none;
+      height: 400px;
+      padding-left: 10px; }
+  #content .contentWrapper button {
+    color: #616161;
+    background: none;
+    border: 2px solid #616161;
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 8px 35px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600; }
+    #content .contentWrapper button:hover {
+      color: white;
+      background-color: #2980b9;
+      border: 2px solid #2980b9; }
+
+.contentWrapperSEO {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 20px 20px 20px; }
+  .contentWrapperSEO p {
+    color: #616161;
+    text-align: center;
+    max-width: 800px; }
+
+@media (min-width: 768px) {
+  #content .contentWrapper .imageWrapper .desktop {
+    height: 400px;
+    width: auto; }
+  #content .contentWrapper .imageWrapper .mobile {
+    display: block; } }
