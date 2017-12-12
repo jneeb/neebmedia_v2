@@ -147,9 +147,6 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -161,13 +158,20 @@ a {
     #hero .heroWrapper .mobileHero .logo h1 {
       margin: 0; }
       #hero .heroWrapper .mobileHero .logo h1 img {
-        width: 200px; }
+        width: 200px;
+        padding-top: 100px; }
     #hero .heroWrapper .desktopHero {
       display: none; }
-    #hero .heroWrapper p {
+    #hero .heroWrapper h2 {
       text-align: center;
       color: white;
-      max-width: 500px; }
+      max-width: 800px;
+      font-size: 20px; }
+      #hero .heroWrapper h2 a {
+        color: white;
+        text-decoration: underline; }
+        #hero .heroWrapper h2 a:hover {
+          opacity: 0.8; }
     #hero .heroWrapper button {
       color: white;
       background: none;
@@ -196,21 +200,36 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   .arrowWrapper .arrowUp {
     display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border-style: solid;
     border-color: transparent transparent transparent white;
-    border-width: 15vh 0 0 50vw; }
+    border-width: 15vh 0 0 50vw;
+    margin: 0;
+    padding: 0; }
   .arrowWrapper .arrowUpTwo {
     width: 0;
     height: 0;
     border-style: solid;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     border-width: 0 0 15vh 50vw;
     border-color: transparent transparent #ffffff transparent; }
 
 .arrowDown {
   display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 0;
   height: 0;
   border-style: solid;
@@ -218,17 +237,12 @@ a {
   border-color: #ffffff transparent transparent transparent; }
 
 @media (min-width: 768px) {
-  #hero .heroWrapper .desktopHero {
-    display: block;
-    font-weight: 600;
-    color: white; }
-    #hero .heroWrapper .desktopHero h1 {
-      color: white;
-      font-size: 40px;
-      font-weight: 600;
-      margin: 0; }
-    #hero .heroWrapper .desktopHero span {
-      font-weight: 300; }
+  #hero .heroWrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #hero .heroWrapper h2 {
+      font-size: 26px; }
   #hero .heroWrapper .mobileHero {
     display: none; } }
 
@@ -251,27 +265,32 @@ a {
           align-items: center;
   padding-bottom: 20px; }
   #services .serviceWrapper .serviceItem {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     max-width: 300px;
     margin: 50px 20px 0 20px; }
-    #services .serviceWrapper .serviceItem span {
-      color: #616161;
-      font-size: 50px; }
-    #services .serviceWrapper .serviceItem h3 {
-      color: #616161; }
-    #services .serviceWrapper .serviceItem p {
-      text-align: center;
-      margin: 0;
-      color: #616161; }
+    #services .serviceWrapper .serviceItem a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      #services .serviceWrapper .serviceItem a:hover h3, #services .serviceWrapper .serviceItem a:hover p, #services .serviceWrapper .serviceItem a:hover span {
+        opacity: 0.8; }
+      #services .serviceWrapper .serviceItem a:hover h3, #services .serviceWrapper .serviceItem a:hover p {
+        text-decoration: underline; }
+      #services .serviceWrapper .serviceItem a span {
+        color: #616161;
+        font-size: 50px; }
+      #services .serviceWrapper .serviceItem a h3 {
+        color: #616161; }
+      #services .serviceWrapper .serviceItem a p {
+        text-align: center;
+        margin: 0;
+        color: #616161; }
 
 .divider {
   display: block;
@@ -372,40 +391,52 @@ a {
           width: 50px; }
       #portfolio .portfolioWrapper .portfolioRow .one {
         background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/veronaDesktopEdit.png);
-        background-size: cover; }
+        background-size: cover;
+        background-position: center; }
         #portfolio .portfolioWrapper .portfolioRow .one:hover {
           background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/veronaDesktopEdit.png);
-          background-size: cover; }
+          background-size: cover;
+          background-position: center; }
       #portfolio .portfolioWrapper .portfolioRow .two {
-        background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/hero-02.png);
-        background-size: cover; }
+        background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/resturantDesktop.png);
+        background-size: cover;
+        background-position: center; }
         #portfolio .portfolioWrapper .portfolioRow .two:hover {
-          background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/hero-02.png);
-          background-size: cover; }
+          background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/resturantDesktop.png);
+          background-size: cover;
+          background-position: center; }
       #portfolio .portfolioWrapper .portfolioRow .three {
-        background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/hero-02.png);
-        background-size: cover; }
+        background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/YEBO.png);
+        background-size: cover;
+        background-position: center; }
         #portfolio .portfolioWrapper .portfolioRow .three:hover {
-          background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/hero-02.png);
-          background-size: cover; }
+          background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/YEBO.png);
+          background-size: cover;
+          background-position: center; }
       #portfolio .portfolioWrapper .portfolioRow .four {
-        background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/hero-02.png);
-        background-size: cover; }
+        background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/ZETdesktop.png);
+        background-size: cover;
+        background-position: center; }
         #portfolio .portfolioWrapper .portfolioRow .four:hover {
-          background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/hero-02.png);
-          background-size: cover; }
+          background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/ZETdesktop.png);
+          background-size: cover;
+          background-position: center; }
       #portfolio .portfolioWrapper .portfolioRow .five {
-        background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/hero-02.png);
-        background-size: cover; }
+        background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/twobyes.png);
+        background-size: cover;
+        background-position: center; }
         #portfolio .portfolioWrapper .portfolioRow .five:hover {
-          background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/hero-02.png);
-          background-size: cover; }
+          background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/twobyes.png);
+          background-size: cover;
+          background-position: center; }
       #portfolio .portfolioWrapper .portfolioRow .six {
-        background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/hero-02.png);
-        background-size: cover; }
+        background: linear-gradient(50deg, rgba(41, 128, 185, 0.4), rgba(41, 128, 185, 0.4)), url(/img/travelly.png);
+        background-size: cover;
+        background-position: center; }
         #portfolio .portfolioWrapper .portfolioRow .six:hover {
-          background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/hero-02.png);
-          background-size: cover; }
+          background: linear-gradient(50deg, rgba(41, 128, 185, 0.9), rgba(41, 128, 185, 0.9)), url(/img/travelly.png);
+          background-size: cover;
+          background-position: center; }
 
 .divider.white {
   background-color: white; }
@@ -414,7 +445,7 @@ a {
   background: none;
   padding-bottom: 20px; }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   #portfolio .portfolioWrapper .portfolioRow {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -422,6 +453,9 @@ a {
             flex-direction: row; }
     #portfolio .portfolioWrapper .portfolioRow .portfolioImg {
       margin-bottom: 0; } }
+
+#psd img {
+  width: 100vw; }
 
 #location h2 {
   padding-top: 50px; }
@@ -508,30 +542,42 @@ a {
       #contact .socialWrapper .socialRow .contactItem {
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
-        margin: 10px 10px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; }
-        #contact .socialWrapper .socialRow .contactItem span {
-          color: white;
-          font-size: 30px; }
-        #contact .socialWrapper .socialRow .contactItem h4 {
-          color: white;
-          margin: 10px 0; }
-        #contact .socialWrapper .socialRow .contactItem p {
-          margin: 0;
-          color: white;
-          text-align: center; }
+        margin: 10px 10px; }
+        #contact .socialWrapper .socialRow .contactItem a {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          cursor: pointer; }
+          #contact .socialWrapper .socialRow .contactItem a:hover h4, #contact .socialWrapper .socialRow .contactItem a:hover p {
+            text-decoration: underline; }
+          #contact .socialWrapper .socialRow .contactItem a:hover .fa-twitter {
+            color: #55acee; }
+          #contact .socialWrapper .socialRow .contactItem a:hover .fa-instagram {
+            color: #df3967; }
+          #contact .socialWrapper .socialRow .contactItem a:hover .fa-envelope {
+            color: #5ac8fa; }
+          #contact .socialWrapper .socialRow .contactItem a:hover .fa-phone-square {
+            color: #4cd964; }
+          #contact .socialWrapper .socialRow .contactItem a span {
+            color: white;
+            font-size: 30px; }
+          #contact .socialWrapper .socialRow .contactItem a h4 {
+            color: white;
+            margin: 10px 0; }
+          #contact .socialWrapper .socialRow .contactItem a p {
+            margin: 0;
+            color: white;
+            text-align: center; }
 
 footer {
   padding-bottom: 60px; }
@@ -603,9 +649,11 @@ footer {
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     #content .contentWrapper .imageWrapper .desktop {
-      width: 80%;
       padding-right: 10px; }
     #content .contentWrapper .imageWrapper .mobile {
       display: none;
@@ -653,3 +701,80 @@ footer {
     width: auto; }
   #content .contentWrapper .imageWrapper .mobile {
     display: block; } }
+
+#form .formWrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0 20px 0; }
+  #form .formWrapper form {
+    width: 100%;
+    max-width: 800px; }
+    #form .formWrapper form .formRow {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      #form .formWrapper form .formRow input {
+        width: 100%;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        padding: 5px 8px;
+        margin-bottom: 5px;
+        line-height: 16px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 16px; }
+      #form .formWrapper form .formRow .contactName {
+        margin-right: 5px; }
+      #form .formWrapper form .formRow textarea {
+        width: 100%;
+        resize: none;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        padding: 5px 8px;
+        margin-top: 5px;
+        line-height: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 16px; }
+      #form .formWrapper form .formRow button {
+        max-width: 80px;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        padding: 5px 10px;
+        margin-top: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        cursor: pointer; }
+    #form .formWrapper form .button {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+
+.formRow .formRowOne {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+@media (min-width: 768px) {
+  #form .formWrapper form .formRow {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    #form .formWrapper form .formRow input {
+      margin-bottom: 0; } }

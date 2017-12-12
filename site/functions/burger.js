@@ -1,11 +1,11 @@
 $(document).ready(function () {
-    $("#burger").click(function () {
-        if($("#burger").hasClass("isOpen")) {
+    $("#mobileBurger").click(function () {
+        if($("#mobileBurger").hasClass("isOpen")) {
             $(this).removeClass("isOpen");
-            $("#mobileSlider").removeClass("isOpen");
+            // $("#mobileSlider").removeClass("isOpen");
         } else {
             $(this).addClass("isOpen");
-            $("#mobileSlider").addClass("isOpen");
+            // $("#mobileSlider").addClass("isOpen");
         }
     });
 });
