@@ -1,78 +1,77 @@
 #content
 
-    .pricingPackages
-        margin-bottom: 20px
+    .seoJumpstart
+        background: black
 
-        .seoJumpstart
+        h2
+            text-align: center
+            color: white
+
+        p
+            max-width: 800px
+            text-align: center
+            color: white
+
+        .seoJumpstartList
             display: flex
-            justify-content: center
             flex-direction: column
             align-items: center
 
-            h2
-                text-align: center
-                color: $grey
+            .seoColumn
+                width: 250.81px
+                height: 72px
 
-            p
-                max-width: 800px
+                ul
+                    margin: 0
+
+                    li
+                        font-family: 'Open Sans', sans-serif
+                        color: white
+
+    .pricingTeir
+
+        .pricingTeirList
+            padding: 0 30px
+            border: 1px solid black
+            box-sizing: border-box
+            margin: 20px 15px
+
+            h3
                 text-align: center
                 color: $grey
+                margin: 20px 0 0 0
+
+            ul
+                margin: 0
+                padding: 0
+
+                li
+                    list-style: none
+                    text-align: center
+                    color: $grey
+                    font-family: 'Open Sans', sans-serif
+                    padding: 20px 5px 10px 5px
+                    border-bottom: 1px solid $grey
+
+@media (min-width: 768px)
+    #content
+
+        .seoJumpstart
 
             .seoJumpstartList
-                display: flex
-                flex-direction: column
-                align-items: center
-
-                .seoColumn
-                    width: 235.53px
-
-                    ul
-
-                        li
+                flex-direction: row
+                justify-content: center
 
         .pricingTeir
+            display: flex
+            justify-content: center
 
             .pricingTeirList
 
-                h2
-                    text-align: center
-                    color: $grey
+                h3
 
                 ul
                     margin: 0
                     padding: 0
 
                     li
-                        text-align: center
-                        color: $grey
-                        padding: 20px 20px 10px 20px
-                        border-bottom: 1px solid $grey
-
-@media (min-width: 768px)
-    #content
-
-        .pricingPackages
-
-            .seoJumpstart
-
-                .seoJumpstartList
-                    flex-direction: row
-                    justify-content: center
-
-            .pricingTeir
-                display: flex
-                justify-content: center
-                margin-top: 50px
-
-                .pricingTeirList
-                    padding: 0 30px
-
-                    h2
-                        margin: 0
-
-                    ul
-                        margin: 0
-                        padding: 0
-
-                        li
-                            list-style: none
