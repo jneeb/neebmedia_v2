@@ -80,8 +80,8 @@ a {
     position: fixed;
     z-index: 5;
     opacity: 0.95;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
+    -webkit-transition: all 0.3s ease-in-outcd;
+    transition: all 0.3s ease-in-outcd; }
     .mobileNav #mobileSlider ul {
       display: block;
       margin: 0;
