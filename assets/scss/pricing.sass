@@ -22,7 +22,8 @@
 
             .seoColumn
                 width: 250.81px
-                height: 72px
+                height: 125px
+                box-sizing: border-box
 
                 ul
                     margin: 0
@@ -31,13 +32,19 @@
                         font-family: 'Roboto', sans-serif
                         font-weight: 700
                         color: white
+                        padding-bottom: 10px
 
     .pricingTeir
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        flex-wrap: wrap
 
         .pricingTeirList
             padding: 0 30px
             border: 1px solid rgba(97, 97, 97, .2)
             box-sizing: border-box
+            overflow: hidden
             margin: 20px 15px
 
             h3
@@ -64,7 +71,7 @@
                     font-size: 14px
                     padding: 20px 5px 10px 5px
                     border-bottom: 1px solid rgba(97, 97, 97, .2)
-                    max-width: 256.52px
+                    width: 256.52px
 
                 li:nth-last-child(1)
                     border-bottom: none
